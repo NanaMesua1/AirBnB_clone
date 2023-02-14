@@ -8,12 +8,18 @@ The project currently only implements the back-end console.
 
 
 Storage 🛄
+
+
 The above classes are handled by the abstracted storage engine defined in the FileStorage class.
 Every time the backend is initialized, HolbertonBnB instantiates an instance of FileStorage called storage. The storage object is loaded/re-loaded from any class instances stored in the JSON file file.json. As class instances are created, updated, or deleted, the storage object is used to register corresponding changes in the file.json.
+
+
 Console 💻
 The console is a command line interpreter that permits management of the backend of HolbertonBnB. It can be used to handle and manipulate all classes utilized by the application (achieved by calls on the storage object defined above).
 Using the Console
 The AirBnB_clone console can be run both interactively and non-interactively. To run the console in non-interactive mode, pipe any command(s) into an execution of the file console.py at the command line.
+
+
 $ echo "help" | ./console.py
 (hbnb) 
 Documented commands (type help <topic>):
@@ -22,6 +28,8 @@ EOF  all  count  create  destroy  help  quit  show  update
 
 (hbnb) 
 $
+  
+  
   $ echo "help" | ./console.py
 (hbnb) 
 Documented commands (type help <topic>):
@@ -30,6 +38,8 @@ EOF  all  count  create  destroy  help  quit  show  update
 
 (hbnb) 
 $
+  
+  
 $ echo "help" | ./console.py
 (hbnb) 
 Documented commands (type help <topic>):
@@ -38,6 +48,8 @@ EOF  all  count  create  destroy  help  quit  show  update
 
 (hbnb) 
 $
+  
+  
 Console Commands
 The HolbertonBnB console supports the following commands:
 
@@ -178,6 +190,8 @@ m', 'first_name': 'Holberton', 'updated_at': datetime.datetime(2019, 2, 17, 21,
 8019-0499-420f-8eec-ef0fdc863c02', 'created_at': datetime.datetime(2019, 2, 17,
 21, 54, 39, 234382)}
 (hbnb) 
+  
+  
 Testing 📏
 Unittests for the HolbertonBnB project are defined in the tests folder. To run the entire test suite simultaneously, execute the following command:
 
@@ -185,5 +199,6 @@ $ python3 unittest -m discover tests
 Alternatively, you can specify a single test file to run at a time:
 
 $ python3 unittest -m tests/test_console.py
+
 Authors ✒️
 Kathryn Agyeman <NanaMesua1>
